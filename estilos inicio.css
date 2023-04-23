@@ -28,6 +28,14 @@ img {
     margin-bottom: 20px;
 }
 
+#footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1em;
+    color: #777;
+}
+
 @media (max-width: 768px)
 {
     img {
