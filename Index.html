@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para la página -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea adaptable a dispositivos móviles -->
+        <meta name="description" content="Lshop: tu tienda de ropa en línea para encontrar las mejores marcas a precios asequibles. Descubre nuestras ofertas exclusivas y renueva tu guardarropa con estilo y calidad. ¡Visita Lshop ahora!">
+        <meta name="keywords" content="tienda de ropa, ropa asequible, ropa de marca, moda económica, ropa de descuento, ropa barata, ropa de calidad, marcas de ropa, outlet de moda, ropa en oferta, ropa a buen precio, ofertas en ropa, ropa económica, ropa en promoción, ropa de marca barata">
+        <meta name="author" content="DevSites S.L."> <!-- Información del autor de la página -->
+        <title>Lshop tu tienda de ropa a precios razonables</title>
+        <link rel="stylesheet" href="estilos inicio.css">
+        <link rel="icon" href="ruta/al/favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="Lshop">
+        <meta property="og:description" content="tu tienda de ropa en línea para encontrar las mejores marcas a precios asequibles. Descubre nuestras ofertas exclusivas y renueva tu guardarropa con estilo y calidad. ¡Visita Lshop ahora!">
+        <meta property="og:image" content="ruta/a/la/imagen/destacada.jpg">
+        <meta property="og:url" content="URL de la página">
+        <meta property="og:type" content="Tienda de ropa de marca">
+        <script src="java.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo+Mono:600i&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <img src="IMG_20230423_235846_655.png" alt="Logo de tu página web">
+        <h1>Algo emocionante está por llegar. ¡Mantente atento!</h1>
+        <div id="countdown"></div>
+        <div id="footer">Pagina creada por: Rodríguez Web Design</div>
+
+        <script>
+            function countdownTimer(endDate) {
+                const now = new Date().getTime();
+                const distance = endDate - now;
+    
+                if (distance < 0) {
+                    clearInterval(timer);
+                    document.getElementById("countdown").innerHTML = "¡El momento ha llegado!";
+                    return;
+                }
+    
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            }
+    
+            const timer = setInterval(function() {
+                const endDate = new Date("2023-05-10:12:00:00").getTime(); // Reemplazar "YYYY-MM-DDTHH:mm:ss" con la fecha y hora de finalización
+                countdownTimer(endDate);
+            }, 1000);
+        </script>
+
+    </body>
