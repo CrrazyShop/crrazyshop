@@ -187,7 +187,7 @@ nav {
 @media screen and (max-width: 768px) {
     header {
       position: relative;
-      
+      width:100%  
     }
   
     nav {
