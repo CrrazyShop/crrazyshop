@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para la página -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea adaptable a dispositivos móviles -->
+        <meta name="description" content="CrrazyShop: tu tienda de ropa en línea para encontrar las mejores marcas a precios asequibles. Descubre nuestras ofertas exclusivas y renueva tu guardarropa con estilo y calidad. ¡Visita Lshop ahora!">
+        <meta name="keywords" content="tienda de ropa, ropa asequible, ropa de marca, moda económica, ropa de descuento, ropa barata, ropa de calidad, marcas de ropa, outlet de moda, ropa en oferta, ropa a buen precio, ofertas en ropa, ropa económica, ropa en promoción, ropa de marca barata">
+        <meta name="author" content="DevSites S.L."> <!-- Información del autor de la página -->
+        <title>CrrazyShop - Carrito</title>
+        <link rel="icon" href="Logos/favicon.ico" type="image/x-icon">
+        <meta property="og:title" content="Lshop">
+        <meta property="og:description" content="tu tienda de ropa en línea para encontrar las mejores marcas a precios asequibles. Descubre nuestras ofertas exclusivas y renueva tu guardarropa con estilo y calidad. ¡Visita Lshop ahora!">
+        <meta property="og:image" content="ruta/a/la/imagen/destacada.jpg">
+        <meta property="og:url" content="URL de la página">
+        <meta property="og:type" content="Tienda de ropa de marca">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo+Mono:600i&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="estilos inicio.css">
+        <link rel="stylesheet" href="estilo seleccion.css">
+    </head>
+
+
+<body>
+    
+<header>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="fotos banner/IMG_20230423_235846_655.png" alt="Lshop -aaaaa         " />
+            </a>
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href="index.html
+                ">Inicio</a>
+            </li>
+            <li id="zapatillas-menu">
+              <a href=".html">Marcas TOP ↓ </a>
+              <ul class="submenu">
+                  <li><a data-url="catalogolacoste.html">Lacoste</a></li>
+                  <li><a data-url="catalogokenzo.html">Kenzo</a></li>
+                  <li><a data-url="catalogodior.html">Dior</a></li>
+                  <li><a data-url="catalogogucci.html">Gucci</a></li>
+                  <li><a data-url="catalogolouisvuitton.html">Louis Vuitton</a></li>
+                  <li><a data-url="catalogothenorthface.html">The North Face</a></li>
+                  <li><a data-url="CatalogoPrada.html">Prada</a></li>
+                  <li><a data-url="CatalogoMoncler.html">Moncler</a></li>
+              </ul>
+          </li>
+            <li>
+                <a href=".html">Marcas Deportivas ↓ </a>
+                <ul class="submenu">
+                  <li><a data-url="catalogoadidas.html">Adidas</a></li>
+                    <li><a data-url="CatalogoNike.html">Nike</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href=".html">Futbol ↓ </a>
+                <ul class="submenu">
+                    <li><a data-url="catalogoligaespañola.html">Liga Española</a></li>
+                    <li><a data-url="catalogoligainglesa.html">Premier League</a></li>
+                    <li><a data-url="catalogoligafrancesa.html">Liga Francesa</a></li>
+                    <li><a data-url="catalogoligaItaliana.html">Liga Italiana</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href=".html">zapatillas ↓ </a>
+              <ul class="submenu"><li>
+                <li><a data-url="catalogozapatillasjordan.html">Nike Jordan</a></li>
+                <li><a data-url="CatalogoZapatillasBalenciaga.html">Balenciaga</a></li>
+                <li><a data-url="CatalogoZapatillasAdidas.html">Adidas</a></li>
+                <li><a data-url="CatalogoZapatillasVans.html">Vans</a></li>
+                <li><a data-url="CatalogoZapatillasVapormax.html">Vapormax</a></li>
+              </ul>
+          </li>
+            <li>
+                <a href=".html">Otros</a>
+            </li>
+            
+        </ul>
+
+        <div class="iconos">
+          <div class="icono-busqueda">
+            <a href="#" class="lupa">
+                <img src="iconos/lupa.png" alt="Buscar productos" />
+            </a>
+            <input type="search" id="buscador" placeholder="Buscar..." style="display: none;">
+        </div>
+            <a href="carrito de compras.html" class="icono-carrito">
+                <img src="iconos/carro-de-la-carretilla.png" alt="Carrito de compras" />
+            </a>
+        </div>
+    </nav>
+
+</header>
+
+
+
+
+
+<h1>Formulario de Pedido en Línea</h1>
+<form id="miFormulario" action="process_form.php" method="post">
+
+    <div>
+
+        <h1>Carrito de compras</h1>
+<div class="carrito" id="carrito-contenedor">
+    <!-- Aquí se mostrarán los productos del carrito -->
+    </div>
+    <div id="total-contenedor">
+        <h2>Total: <span id="total">€0.00</span></h2>
+    </div>
+    <script src="java.js"></script>
+    <script>
+        mostrarCarrito();
+    </script>
+    <input type="hidden" id="carrito" name="carrito">
+
+    </div>
+    
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="provincia">Provincia:</label>
+    <input type="text" id="provincia" name="provincia" required><br><br>
+    
+    <label for="localidad">Localidad:</label>
+    <input type="text" id="localidad" name="localidad" required><br><br>
+    
+    <label for="codigo_postal">Código Postal:</label>
+    <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
+    
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+    
+    <label for="telefono">Número de Teléfono:</label>
+    <input type="text" id="telefono" name="telefono" required><br><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
+
+</body>

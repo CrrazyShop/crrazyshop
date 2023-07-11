@@ -1,0 +1,153 @@
+.NombreMarca {
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 200px;
+    margin-left: 100px;
+    border-left: 8px solid #ff0000;
+    padding-left: 1rem;
+    line-height: 1.2;
+  }
+  
+  .NombreMarca::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+  }
+  
+  .titulo-productos {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    
+    .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 50px;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    padding: 50px;
+    }
+    
+    .tarjeta-producto {
+    width: 300px;
+    padding: 1.5rem;
+    border: 1px solid #b3b3b3;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    background-image: linear-gradient(to bottom right, #f3f3f3, #d8d8d8);
+    cursor: pointer;
+    }
+
+    .tarjeta-producto:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tarjeta-producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+    
+    
+    .nombre-producto {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    }
+    
+    .precio-producto {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 1rem;
+    }
+    
+    .p {
+    align-self: flex-end;
+    font-size: 1rem;
+    color: #888;
+    margin-top: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .NombreMarca{
+
+            font-weight: none;
+            font-family: none;
+            font-size: none;
+            color: none;
+            text-decoration: none;
+            display: none;
+            margin: none;
+            padding: none;
+            text-align: none;
+            margin-top: none;
+            margin-left: none;
+            border-left: none;
+            padding-left: none;
+            line-height: none;
+
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        
+
+        .tarjeta-producto {
+            width: 100px;
+            height: auto;
+        }
+
+        .nombre-producto{
+
+            font-size: 0.9rem;
+
+        }
+        
+
+        
+
+        
+
+
+    }
+
+  
