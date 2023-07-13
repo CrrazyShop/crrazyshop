@@ -76,32 +76,35 @@ function desplegarTexto(index) {
 let carrito = [];
 
 function agregarAlCarrito(button) {
-    const idProducto = button.dataset.id;
-    const idOculto = button.dataset.idOculto;
-
     const producto = button.parentElement.parentElement;
-    const imagen = producto.querySelector("img").src;
-    const nombre = producto.querySelector("h2").innerText;
-    const precio = parseFloat(producto.querySelector(".precio").innerText.replace("€", ""));
+    const imagen = producto.querySelector("#imagenProducto").src;
+    const nombre = producto.querySelector("#nombreProducto").innerText;
+    const precio = parseFloat(producto.querySelector("#precioProducto").innerText.replace("€", ""));
     const talla = producto.querySelector("#talla").value;
     const cantidad = parseInt(producto.querySelector("#cantidad").value);
 
     const itemCarrito = {
-        id: idProducto,
-        idOculto: idOculto,
         imagen: imagen,
         nombre: nombre,
         precio: precio,
         talla: talla,
         cantidad: cantidad,
     };
-    
+
     carrito.push(itemCarrito);
+    
+    window.location.href = "carrito de compras.html";
 
     console.log(carrito); // Esto es solo para verificar la información del carrito en la consola del navegador
     localStorage.setItem("carrito", JSON.stringify(carrito));
     mostrarCarrito();
+
+   
+
+    
 }
+
+
 
 
 function mostrarCarrito() {
@@ -2762,6 +2765,15 @@ const productos = [
     nombre: "Zapatillas Vans Azul- Negro High Old School",
     precio: 69.99,
     imagen: "Zapatillas Vans/Vans Azul- Negro High Old School.png",
+},
+
+//Productos Givenchy
+
+{
+    id: "Camiseta Gris Givenchy",
+    nombre: "Camiseta Gris Givenchy",
+    precio: 39.99,
+    imagen: "Givenchy/Camiseta Gris Givenchy.png",
 },
 
 ];
