@@ -2,34 +2,42 @@
     display: flex;
     align-items: center;
     margin-bottom: 24px;
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 300px;
+    margin-left: 30px;
+    max-width: 75%;
 }
 
 .producto img {
-    margin-top: 50px;
-    max-width: 300px;
+    margin-top: px;
+    max-width: 500px;
     margin-right: 16px;
     border: solid 4px #ff0000;
     border-radius: 5px;
-}
+    box-shadow: 0 5px 10px rgba(253, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .producto img:hover {
+    transform: scale(1.05);
+  }
 
 
 .frases {
     width: 80%;
     background-color: #ff0000;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin-left: 150px;
-    margin-top: 50px;
+    margin-top: 200px;
+
 }
 
 .frase {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem ;
     background-color: #f2f2f2;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -143,7 +151,11 @@ form {
     margin-bottom: 10px;
     font-weight: bold;
     color: #333;
+    
   }
+
+  
+
   
   input[type="text"],
   input[type="tel"] {
@@ -176,6 +188,21 @@ form {
     box-shadow: 0 0 0 3px rgba(60, 180, 120, 0.5);
   }
 
+  .precio{
+
+    font-size: 1.2rem;
+    color: #ff4500 !important;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+  }
+
+  h2{
+
+    margin-bottom: 20px;
+
+  }
+
   @media screen and (max-width: 768px) {
 
     .producto {
@@ -201,5 +228,16 @@ form {
         padding: 1rem;
 
     }
+
+    .frases{
+
+        width: 60%;
+        position: relative;
+
+    }
+
+    
+
+    
 
   }
